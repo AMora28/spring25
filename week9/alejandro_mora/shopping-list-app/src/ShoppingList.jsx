@@ -1,5 +1,5 @@
 // Create a Shopping List Component that takes in 2 arguments
-function ShoppingList({ shoppingList, removeItem }) {
+function ShoppingList({ shoppingList, removeItem, budget }) {
 
 
     const totalSpent = shoppingList.reduce((acc, item) => acc + Number(item.cost), 0);
