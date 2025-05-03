@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #111;
+    background-color: white;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 40px;
+    color: white;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  
+  .year {
+    font-weight: bold;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .nav-links a.active,
+  .nav-links a:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("https://images.squarespace-cdn.com/content/v1/63d40fe2cbd65e16cb8098b6/1678437282243-XL1EAF7FXW1KFY61HJ5V/why%2Blearn%2Bto%2Bcode.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-text h2 {
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .hero-text p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 0 0;
+  }
+  
+  /* Introduction Section */
+  .intro {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .intro h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .intro-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro-content img {
+    max-width: 500px;
+    width: 100%;
+    border: 5px solid #1d4ed8;
+  }
+  
+  .intro-text {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .intro-text h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #a38b6b;
+  }
+  
+  .intro-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  /* Dark Section (Overview, Why Learn, Inclusivity) */
+  .dark-section {
+    background-color: #000;
+    color: white;
+    padding: 60px 40px;
+  }
+  
+  .dark-section h2,
+  .dark-section h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .dark-section h3 {
+    margin-top: 40px;
+    color: #d2a675;
+  }
+  
+  .dark-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: left;
+  }
+  
+  .dark-section .subtitle {
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  /* Highlight Section (purple stars background) */
+  .highlight-section {
+    padding: 60px 30px;
+    background-image: url("https://cdn.builtin.com/cdn-cgi/image/f=auto,fit=cover,w=320,h=200,q=80/https://builtin.com/sites/www.builtin.com/files/Code.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .highlight-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  
+  .highlight-section hr {
+    margin: 30px auto;
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .highlight-section p {
+    max-width: 900px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: #111;
+    color: white;
+    border: 1px solid #999;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #666;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Final CTA Section */
+  .final-cta {
+    padding: 60px 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+  
+  .final-cta h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #666;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .cta-buttons p {
+    max-width: 800px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 30px;
+    background-color: black;
+    text-align: center;
+  }
+  
+  .back-to-top {
+    background-color: #666;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .section-split {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 40px;
+  }
+  
+  .section-split .text-side {
+    flex: 1 1 550px;
+    min-width: 300px;
+  }
+  
+  .section-split .image-side {
+    flex: 1 1 500px;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-split .image-side img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  /* Additional vertical spacing between split blocks */
+  .section-split + .section-split {
+    margin-top: 40px;
+  }
+
+  /* Journey Section */
+  .journey-section {
+    background-color: #fff;
+    color: #111;
+    padding: 80px 60px 60px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .journey-section h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 60px;
+  }
+  
+  .journey-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 40px;
+    max-width: 1100px;
+  }
+  
+  .journey-button {
+    background-color: #666;
+    color: white;
+    font-weight: bold;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    padding: 14px 24px;
+    border: none;
+    cursor: pointer;
+    min-width: 180px;
+    text-align: center;
+  }
+  
+  .journey-block p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+  }
+  
+  /* === Back to Top Button === */
+  .back-to-top {
+    width: 100%;
+    background-color: #000;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .back-to-top-btn {
+    background-color: #666;
+    color: #fff;
+    padding: 14px 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-top-btn:hover {
+    background-color: #4a4a4a;
+  }
